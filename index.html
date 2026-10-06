@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg, skyblue, purple);
+        }
+
+        form {
+            height: 80%;
+            width: 30%;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .email,
+        .Password,
+        .login {
+            height: 22.5%;
+            /* border: 1px solid black; */
+            width: 90%;
+            margin: auto;
+        }
+
+        input {
+            height: 50%;
+            width: 100%;
+            text-align: center;
+            margin-top: 3%;
+            border: 1px solid grey;
+            background-color: lightgrey;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin-top: 10%;
+            margin-bottom: 5%;
+        }
+
+        .login>p {
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        #Login {
+            background: linear-gradient(90deg, skyblue, purple);
+            color: white;
+        }
+
+        .Password>p {
+            margin-top: 3%;
+            color: gray;
+            font-style: italic;
+        }
+
+        a {
+            text-decoration: none;
+            /* color: blueviolet; */
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1 align="center">Login Form</h1>
+        <div class="email">
+            <label for="">Email or Phone</label>
+            <input type="text" placeholder="xyz@gmail.com">
+        </div>
+        <div class="Password">
+            <label for="">Password</label>
+            <input type="Password" placeholder="Abc@1234">
+            <p>Forget Password</p>
+        </div>
+        <div class="login">
+            <input type="button" value="LOGIN" id="Login">
+            <p>Not a Member ? <a href="SignUp_Page.html">Sign Up</a></p>
+        </div>
+    </form>
+</body>
+
+</html>
